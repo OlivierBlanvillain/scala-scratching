@@ -16,4 +16,13 @@ object monoid extends App{
   val totals = Monoid[Map[String, Int]].combineAll(scores)
   println("totals = " + totals)
 
+  /*
+  from the book:
+
+  Cats defines Monoid as an extension to another category theory abstraction called semigroup.
+Semigroups must have the combine method, therefore in Cats integer addition is defined in IntGroup
+(see the the first import). The second import adds a rule for combining Map s. In particular, it specifies
+that this operation actually boils down to grouping by keys and combining (here adding) their values.
+   */
+
 }
