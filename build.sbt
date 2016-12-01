@@ -1,5 +1,7 @@
 name := "hello"
 
+// https://github.com/denisftw/advanced-scala-code/blob/master/build.sbt#L60
+
 version := "1.0"
 
 scalaVersion := "2.11.8"
@@ -11,4 +13,6 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.7"
+
+libraryDependencies +=  "org.scalaz" %% "scalaz-concurrent" % "7.2.7"
 

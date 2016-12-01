@@ -1,4 +1,4 @@
-package scalaz
+package scalazed
 
 import scalaz._, Scalaz._
 
