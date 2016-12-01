@@ -1,11 +1,9 @@
 package catss
 
 
-import cats.{Functor, Monad, MonadReader}
-import cats.data.{OptionT, Reader, Xor, XorT}
+import cats.Monad
+import cats.data.{Xor, XorT}
 
-import scala.concurrent.Future
-import scala.concurrent.ExecutionContext.Implicits.global
 import scalaz.concurrent.Task
 
 object monadtransformers extends App{
@@ -42,5 +40,5 @@ object monadtransformers extends App{
 
   val tada = result.value.unsafePerformSync
   println("tada = " + tada)
-  
+
 }
