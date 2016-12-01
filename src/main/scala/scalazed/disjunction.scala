@@ -2,17 +2,14 @@ package scalazed
 
 import scalaz._, Scalaz._
 
-object Random {
+
+object disjunction extends App{
+
   def queryNextNumber: Exception \/ Long = {
     val source = Math.round(Math.random * 100)
     if(source < 60) \/.right(source)
     else \/.left(new Exception("the generated number is too big"))
   }
-}
-
-object disjunction extends App{
-
-  import Random._
 
   // for syntax that i remember
   val lowishNumbers = for {

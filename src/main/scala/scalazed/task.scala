@@ -29,4 +29,5 @@ object task extends App{
   println("i am printed before result 3's body because it's lazy")
   println(result3.unsafePerformSync)
 
+
 }
