@@ -9,3 +9,6 @@ addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.fu
 libraryDependencies ++= Seq(
   "com.github.mpilquist" %% "simulacrum" % "0.7.0"
 )
+
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.7"
+
