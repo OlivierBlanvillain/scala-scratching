@@ -1,14 +1,11 @@
 
 object implicitFail extends App{
+
   case class Person(name: String)
 
-
   object Person {
-
     implicit def stringToPerson(str: String) = Person(str)
-
     implicit val people: List[Person] = List("Chris", "Bob")
-
   }
 
   def printPerson(p: Person) {
